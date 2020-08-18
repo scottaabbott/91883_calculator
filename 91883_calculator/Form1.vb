@@ -43,14 +43,26 @@
     End Sub
 
     Private Sub btnPlus_Click(sender As Object, e As EventArgs) Handles btnPlus.Click
+        ' add value in textbox (converted to a number) to the 1st total variable
+        total1 = total1 + Val(txtDisplay.Text)
+        ' clear the textbox
+        txtDisplay.Clear()
 
     End Sub
 
     Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
-
+        ' add 1st total variable to the converted textbox value & save in the 2nd total variable
+        total2 = total1 + Val(txtDisplay.Text)
+        ' display the result
+        txtDisplay.Text = total2
+        ' reset the 1st total variable to zero 
+        total1 = 0
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-
+        ' set the 1st total variable to zero 
+        total1 = 0
+        ' clear the textbox
+        txtDisplay.Clear()
     End Sub
 End Class
