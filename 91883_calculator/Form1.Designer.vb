@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtDisplay = New System.Windows.Forms.TextBox()
         Me.btnZero = New System.Windows.Forms.Button()
         Me.btnOne = New System.Windows.Forms.Button()
         Me.btnTwo = New System.Windows.Forms.Button()
@@ -38,13 +38,13 @@ Partial Class Form1
         Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtDisplay
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(60, 51)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(185, 29)
-        Me.TextBox1.TabIndex = 0
+        Me.txtDisplay.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDisplay.Location = New System.Drawing.Point(60, 51)
+        Me.txtDisplay.Name = "txtDisplay"
+        Me.txtDisplay.Size = New System.Drawing.Size(185, 29)
+        Me.txtDisplay.TabIndex = 0
         '
         'btnZero
         '
@@ -195,7 +195,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnTwo)
         Me.Controls.Add(Me.btnOne)
         Me.Controls.Add(Me.btnZero)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtDisplay)
         Me.Name = "Form1"
         Me.Text = "Calculator"
         Me.ResumeLayout(False)
@@ -203,7 +203,7 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtDisplay As TextBox
     Friend WithEvents btnZero As Button
     Friend WithEvents btnOne As Button
     Friend WithEvents btnTwo As Button
